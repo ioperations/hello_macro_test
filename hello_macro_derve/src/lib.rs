@@ -20,7 +20,6 @@ fn impl_hello_macro(ast: &syn::DeriveInput) -> TokenStream {
                 let mut counter = 0;
                 for i in name.named.iter() {
                     println!(" ==> the {}'s filed ident is {:#?}",counter , i.ident,);
-                    
                     for j in i.attrs.iter(){
                         println!("{} has attribute {:#?}" ,std::iter::repeat("-").take(10).collect::<String>(),
                         j.tokens);

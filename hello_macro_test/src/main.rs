@@ -16,6 +16,8 @@ enum Color {
 #[derive(HelloMacro)]
 #[derive(Clone,Debug, PartialEq, PartialOrd)]
 #[derive(Serialize,Deserialize)]
+/// zh_cn: 这是一个要被Debug的结构体
+/// eng: the struct to be reflect
 struct Packents {
     #[allow(unused)]
     #[serde(skip_serializing)]
