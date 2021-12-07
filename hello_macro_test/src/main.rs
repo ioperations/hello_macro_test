@@ -1,4 +1,4 @@
-use hello_macro::HelloMacro;
+pub(crate) use hello_macro::HelloMacro;
 use hello_macro_derve::HelloMacro;
 use serde::{Serialize,Deserialize};
 
