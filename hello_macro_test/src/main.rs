@@ -1,9 +1,10 @@
 pub(crate) use hello_macro::HelloMacro;
 use hello_macro_derve::HelloMacro;
-use serde::{Serialize,Deserialize};
+use serde::{Deserialize, Serialize};
+mod find_meidan_from_sorted_arrays;
+mod lib;
 
-#[derive(Debug,Clone, Copy,PartialEq,PartialOrd)]
-#[derive(Serialize,Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, PartialOrd, Serialize, Deserialize)]
 enum Color {
     #[allow(unused)]
     Red,
@@ -13,9 +14,7 @@ enum Color {
     Green,
 }
 
-#[derive(HelloMacro)]
-#[derive(Clone,Debug, PartialEq, PartialOrd)]
-#[derive(Serialize,Deserialize)]
+#[derive(HelloMacro, Clone, Debug, PartialEq, PartialOrd, Serialize, Deserialize)]
 /// zh_cn: 这是一个要被Debug的结构体
 /// eng: the struct to be reflect
 struct Packents {
