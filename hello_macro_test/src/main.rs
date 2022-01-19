@@ -3,6 +3,7 @@ use hello_macro_derve::HelloMacro;
 use serde::{Deserialize, Serialize};
 mod find_meidan_from_sorted_arrays;
 mod lib;
+mod merge_two_sorted_list;
 
 #[derive(Debug, Clone, Copy, PartialEq, PartialOrd, Serialize, Deserialize)]
 enum Color {
