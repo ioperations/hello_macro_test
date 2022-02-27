@@ -7,6 +7,7 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
+    #[allow(unused)]
     fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
@@ -88,6 +89,7 @@ fn test_sorted() {
 }
 */
 
+#[allow(unused)]
 pub fn merge_two_lists(
     list1: Option<Box<ListNode>>,
     list2: Option<Box<ListNode>>,
